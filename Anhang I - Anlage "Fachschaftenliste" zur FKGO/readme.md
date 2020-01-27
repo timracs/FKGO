@@ -2,4 +2,50 @@
 Die Liste der Fachschaften mit zugeordneten Studiengängen muss zu Beginn jedes Semesters durch das Fachschaftenreferat aktualisiert werden. Sie wird danach auf der Fachschaftenkonferenz beschlossen und dem Studierendenparlament zur Bestätigung vorgelegt.
 
 ## Fachschaftenliste aktualisieren - How to
+Die Universität modifiziert gelegentlich ihr Studienangebot, und so muss auch die Fachschaftenliste 
+regelmäßig aktualisiert werden.
+
+- FAKs können entfernt werden, wenn keine Person sie mehr studiert
+- Alle neuen FAKs werden hinzugefügt und einer passenden Fachschaft zugeordnet
+
+Die folgende Vorgehensweise hat sich bei der Aktualisierung bewährt.
+
+### Benötigte Daten
+
+- Studierendenstatistik - Personen - aktuelles Semester
+- Studierendenstatistik - Fälle - aktuelles Semester
+- Liste der Fachschaften der RFWU Bonn mit zugeordneten FAKs (Markdown)
+
+Die Studierendenstatistik ist im Universitäts-Intranet erhältlich: 
+[Link](https://www.intranet.uni-bonn.de/organisation/verwaltung/dez-9/abt-9.3/studierendenstatistik)
+
+Die Liste der Fachschaften der RFWU Bonn mit zugeordneten FAKs im Markdown-Format kann im fstool 
+heruntergeladen werden: [Link](https://gaia.asta.uni-bonn.de/fstool/fachschaften-md.php?fullnames)
+
+### Daten vorbereiten
+
+Die Excel-Dateien der Studierendenstatistik müssen in csv-Dateien umgewandelt werden. Dafür die Datei öffnen, 
+das zweite Tabellenblatt (Quelldaten) öffnen und als csv-Datei speichern (Komma als Feldtrenner, Anführungszeichen 
+als Texttrenner)
+
+### Skriptmagie
+
+Das Skript `analyze.py` im Ordner `fakupdate` wird mit den beiden csv-Dateien sowie der aktuellen 
+Fachschaftenliste im Markdown-Format als Parameter aufgerufen. 
+
+```
+./analyze.py faelle.csv personen.csv fachschaftenliste.md
+```
+
+Es erzeugt daraufhin 5 neue Dateien im selben Ordner:
+
+- `FAKDIFF.txt`, enthält alle zu entfernenden und hinzuzufügenden FAKs mit den Kommentaren "NEW" und "REMOVED"
+- `FAKLISTE.txt`, enthält alle existierenden FAKs aus den csv-Dateien
+- `FAKNEW.txt`, enthält alle neuen FAKs aus den csv-Dateien
+- `FAKREMOVED.txt` enthält alle zu entfernenden FAKs aus den csv-Dateien
+- `FS-Removed.md` enthält für jede betroffene Fachschaft die zu entfernenden FAKs
+
+Neu hinzugekommene FAKs müssen manuell zugeordnet werden. Anhaltspunkt hierfür kann die zugehörige Fakultät 
+sein, diese kann in den Excel-Dateien nachgeschlagen werden. Zu entfernende FAKs sollten nur entfernt werden, 
+wenn wirklich sicher ist, dass sie nicht mehr benötigt werden.
 
