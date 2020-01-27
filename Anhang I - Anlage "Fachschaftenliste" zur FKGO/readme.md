@@ -28,7 +28,12 @@ als Texttrenner)
 ### Skriptmagie
 
 Das Skript `analyze.py` im Ordner `fakupdate` wird mit den beiden csv-Dateien sowie der aktuellen 
-Fachschaftenliste im Markdown-Format als Parameter aufgerufen. 
+Fachschaftenliste im Markdown-Format als Parameter aufgerufen. Am Rechner des Fachschaftenreferats wird dazu zunächst die Konsole geöffnet und mit dem folgenden Befehl der relevante Ordner angesteuert:
+
+```
+cd Dokumente/fakupdate/fktools/fakupdate
+
+```
 
 ```
 ./analyze.py faelle.csv personen.csv fachschaftenliste.md
