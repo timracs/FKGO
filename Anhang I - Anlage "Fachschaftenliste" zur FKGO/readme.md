@@ -32,7 +32,6 @@ Fachschaftenliste im Markdown-Format als Parameter aufgerufen. Am Rechner des Fa
 
 ```
 cd Dokumente/fakupdate/fktools/fakupdate
-
 ```
 Anschließend wird mit dem folgenden Befehl das Skript gestartet. Vorraussetzung ist, dass sich die nötigen Dateien im selben Ordner wie das Skript befinden.
 
