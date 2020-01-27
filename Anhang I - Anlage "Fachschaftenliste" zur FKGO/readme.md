@@ -2,10 +2,10 @@
 Die Liste der Fachschaften mit zugeordneten Studiengängen muss zu Beginn jedes Semesters durch das Fachschaftenreferat aktualisiert werden. Sie wird danach auf der Fachschaftenkonferenz beschlossen und dem Studierendenparlament zur Bestätigung vorgelegt. [§ 22 SdS](https://www.sp.uni-bonn.de/dokumente/idx/Satzungen/SdS.html#%C2%A722)
 
 ## Fachschaftenliste aktualisieren - How to
-Um das Aktualisieren der Fachschaftenliste einfacher zu machen, wurde von @hszemi ein Werkzeug erstellt, welches die Studierendenstatistik der Universität mit der Fachschaftenliste abgleicht und die Änderungen ausspuckt.
+Um das Aktualisieren der Fachschaftenliste einfacher zu machen, wurde von hszemi ein [Werkzeug](https://github.com/hszemi/fktools) erstellt, welches die Studierendenstatistik der Universität mit der Fachschaftenliste abgleicht und die Änderungen ausspuckt.
 
 ### Benötigte Daten
-Um das Werkzeug zu verwenden, müssen zunächst die Rohdaten vorbeireitet werden. Das sind:
+Um das Werkzeug zu verwenden, müssen zunächst die Rohdaten vorbereitet werden. Das sind:
 
 - Studierendenstatistik - Personen - aktuelles Semester
 - Studierendenstatistik - Fälle - aktuelles Semester
