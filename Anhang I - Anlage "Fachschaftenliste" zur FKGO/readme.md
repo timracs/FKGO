@@ -1,16 +1,11 @@
 # Anmerkungen zur Fachschaftenliste
-Die Liste der Fachschaften mit zugeordneten Studiengängen muss zu Beginn jedes Semesters durch das Fachschaftenreferat aktualisiert werden. Sie wird danach auf der Fachschaftenkonferenz beschlossen und dem Studierendenparlament zur Bestätigung vorgelegt.
+Die Liste der Fachschaften mit zugeordneten Studiengängen muss zu Beginn jedes Semesters durch das Fachschaftenreferat aktualisiert werden. Sie wird danach auf der Fachschaftenkonferenz beschlossen und dem Studierendenparlament zur Bestätigung vorgelegt. [§ 22 SdS](https://www.sp.uni-bonn.de/dokumente/idx/Satzungen/SdS.html#%C2%A722)
 
 ## Fachschaftenliste aktualisieren - How to
-Die Universität modifiziert gelegentlich ihr Studienangebot, und so muss auch die Fachschaftenliste 
-regelmäßig aktualisiert werden.
-
-- FAKs können entfernt werden, wenn keine Person sie mehr studiert
-- Alle neuen FAKs werden hinzugefügt und einer passenden Fachschaft zugeordnet
-
-Die folgende Vorgehensweise hat sich bei der Aktualisierung bewährt.
+Um das Aktualisieren der Fachschaftenliste einfacher zu machen, wurde von @hszemi ein Werkzeug erstellt, welches die Studierendenstatistik der Universität mit der Fachschaftenliste abgleicht und die Änderungen ausspuckt.
 
 ### Benötigte Daten
+Um das Werkzeug zu verwenden, müssen zunächst die Rohdaten vorbeireitet werden. Das sind:
 
 - Studierendenstatistik - Personen - aktuelles Semester
 - Studierendenstatistik - Fälle - aktuelles Semester
@@ -18,6 +13,7 @@ Die folgende Vorgehensweise hat sich bei der Aktualisierung bewährt.
 
 Die Studierendenstatistik ist im Universitäts-Intranet erhältlich: 
 [Link](https://www.intranet.uni-bonn.de/organisation/verwaltung/dez-9/abt-9.3/studierendenstatistik)
+Dort auf "Gastzugang" klicken und bei "Studierende" unter "Dateien zum Download" die aktuellen Excel-Tabellen für Personen und Fälle herunterladen. 
 
 Die Liste der Fachschaften der RFWU Bonn mit zugeordneten FAKs im Markdown-Format kann im fstool 
 heruntergeladen werden: [Link](https://gaia.asta.uni-bonn.de/fstool/fachschaften-md.php?fullnames)
