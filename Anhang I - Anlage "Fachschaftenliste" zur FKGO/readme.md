@@ -13,6 +13,7 @@ Um das Werkzeug zu verwenden, müssen zunächst die Rohdaten vorbeireitet werden
 
 Die Studierendenstatistik ist im Universitäts-Intranet erhältlich: 
 [Link](https://www.intranet.uni-bonn.de/organisation/verwaltung/dez-9/abt-9.3/studierendenstatistik)
+
 Dort auf "Gastzugang" klicken und bei "Studierende" unter "Dateien zum Download" die aktuellen Excel-Tabellen für Personen und Fälle herunterladen. 
 
 Die Liste der Fachschaften der RFWU Bonn mit zugeordneten FAKs im Markdown-Format kann im fstool 
