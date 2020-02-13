@@ -1,0 +1,65 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}                
+\usepackage[utf8]{inputenc} 
+\usepackage[ngerman]{babel} 
+\usepackage{enumerate}
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{ifthen}
+\usepackage{color}
+\usepackage{tabularx}
+\usepackage[official]{eurosym}
+
+\setlength\parindent{0pt}
+\DeclareUnicodeCharacter{20AC}{\euro}
+\geometry {a4paper, top= 25mm, bottom=25mm, left=25mm, right=25mm}
+\titleformat{\part}{\fontsize{15pt}{15pt}\bfseries}{\thepart .\ }{0pt}{}
+\titleformat{\chapter}{\fontsize{15pt}{15pt}\bfseries}{\thechapter .\ }{0pt}{}
+\titleformat{\section}{\fontsize{11pt}{13pt}\bfseries}{\S \ \thesection \ }{0pt}{\normalsize}
+
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}} % linksbündig mit Breitenangabe
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}} % zentriert mit Breitenangabe
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}} % rechtsbündig mit Breitenangabe
+
+\begin{document}
+\noindent
+\begin{center}
+    \huge \textbf{Anlage II zur FKGO -- Kriterienkatalog}
+\end{center}
+
+
+
+\section{Höchstsätze}
+Folgende Posten können über BFsG beantragt werden:\\
+\begin{center}
+\setlength\extrarowheight{2mm}
+\sffamily
+\begin{tabular}{l|L{4,5 cm}|L{5cm}|L{4,5cm}}
+    &\textbf{Titel} & \textbf{Anmerkungen} & \textbf{Höchstsatz}\\ \hline
+     a&Erstsemesterarbeit & in der ersten Woche des Semesters \newline im Sommersemester ist Vorhandensein von Erstsemestern nachzuweisen& 800 € \newline davon für Verpflegung max. 200 €\\ \hline
+     b&Erstsemesterfahrten & max. 30 \% Nicht-Erstsemester \newline im Sommersemester ist Vorhandensein von Erstsemestern nachzuweisen & bis zu 30 Teilnehmer: 800 € \newline
+     bis zu 50 Teilnehmer: 900 € \newline über 50 Teilnehmer: 1000 € \\ \hline
+     c&Klausurfahrten & Fahrt für aktive Fachschaftsmitglieder, um gezielt an fachschafts- bezogenen Themen zu arbeiten \newline regional (< 100 km Anreise) & bis zu 10 Teilnehmer: 500 € \newline
+     bis zu 30 Teilnehmer: 800 € \newline über 30 Teilnehmer: 900 € \\ \hline
+     d&Teilnahme BuFaTa & Teilnahme landes-, bundes-, europa- oder weltweiten Fachschaftsversammlungen & 800 € \\ \hline
+     e&Bildungsfahrt & mehrtägige Exkursion mit Fachbezug, offen für die gesamte Fachschaft & bis zu 20 Teilnehmer: 800 € \newline
+     bis zu 50 Teilnehmer: 900 € \newline über 50 Teilnehmer: 1000 € \\ \hline
+     f&Tagesexkursion & eintägige Exkursion mit Fachbezug, offen für die gesamte Fachschaft & bis zu 20 Teilnehmer: 100 € \newline
+     bis zu 50 Teilnehmer: 250 € \newline über 50 Teilnehmer: 500 € \\ \hline
+     g&Computer und Zubehör & Reparatur oder Kauf von EDV-Geräten, kein alltäglicher Bürobedarf wie Druckerpatronen & 400 € \\ \hline
+     h&Inhaltliche Veranstaltungen & to do & 700 € \\ \hline
+     i&Ausrichtung BuFaTa & überregionale Bundesfachschaftentagung in Bonn & 2000 € \\ \hline
+     j&Fachschaftsneugründung & Maßgeblich ist die Aufnahme in die Fachschaftenliste (Anhang III FKGO) & AFsG-Sockelsatzes, i.d.R.1000 € \\
+\end{tabular}
+\end{center}
+\pagebreak
+
+\rmfamily
+\section{Maximale Ausgaben}
+\begin{enumerate}[(1)]
+    \item Für Fahrten nach § 1 Punkt b, c, e, und f können je Person und Tag maximal 50 € beantragt werden.
+    \item Für Fahrten nach § 1 Punkt b, c, e, und f können pro Semester maximal 2500 € beantragt werden.
+    \item Für inhaltliche Veranstaltungen nach Punkt h können pro Semester maximal 2000 € beantragt werden.
+\end{enumerate}
+\end{document}
