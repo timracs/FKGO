@@ -1,0 +1,63 @@
+\documentclass{article}
+\usepackage[T1]{fontenc}                
+\usepackage[utf8]{inputenc} 
+\usepackage[ngerman]{babel} 
+\usepackage{enumerate}
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{ifthen}
+\usepackage{color}
+\usepackage{tabularx}
+\usepackage[official]{eurosym}
+
+\setlength\parindent{0pt}
+\DeclareUnicodeCharacter{20AC}{\euro}
+\geometry {a4paper, top= 25mm, bottom=25mm, left=25mm, right=25mm}
+\titleformat{\part}{\fontsize{15pt}{15pt}\bfseries}{\thepart .\ }{0pt}{}
+\titleformat{\chapter}{\fontsize{15pt}{15pt}\bfseries}{\thechapter .\ }{0pt}{}
+\titleformat{\section}{\fontsize{12pt}{13pt}\bfseries}{\thesection .\ }{0pt}{}
+
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}} % linksbündig mit Breitenangabe
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}} % zentriert mit Breitenangabe
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}} % rechtsbündig mit Breitenangabe
+
+\begin{document}
+\noindent
+\begin{center}
+	\huge \textbf{Anlage III zur FKGO -- Abkürzungsverzeichnis}
+\end{center}
+\vspace{2em}
+\setlength\extrarowheight{2mm} \sffamily    
+\begin{tabular}{L{2 cm} L{7cm} L{6cm}}
+\textbf{Abkürzung} & \textbf{Bedeutung} & \textbf{Erläuterung}\\ \hline
+AFsG & \textit{Allgemeine Fachschaftengelder} &  \\
+AStA & \textit{Allgemeiner Studierendenausschuss} & \\
+BFsG & \textit{Besondere Fachschaftengelder} & \\
+BO & \textit{Beitragsordnung der Studierendenschaft} & Regelt die Höhe und Verteilung der Semesterbeiträge \\
+FAK & \textit{Fach-Abschluss-Kombination} & Kombination von Studienfach und angestrebtem Abschluss\\
+FID & \textit{Fachschaften-Informationsdienst} & \\
+FK & \textit{Fachschaftenkonferenz} & \\
+FKGO & \textit{Geschäftsordnung der Fachschaftenkonferenz} & \\
+FR & \textit{Fachschaftenreferat} & \\
+FSK & \textit{Fachschaftenkollektiv} & \\
+FSR & \textit{Fachschaftsrat} & \\
+FsS & \textit{Fachschaftssatzung}  &  \\
+FSV & \textit{Fachschaftsvertretung} & \\
+FSVV & \textit{Fachschaftsvollversammlung} &  \\
+FSWO & \textit{Fachschaftswahlordnung} &  \\
+GO & \textit{Geschäftsordnung} &  \\
+GoSaFK & \textit{Geschäftsordnungs- und Satzungsausschuss der Fachschaftenkonferenz} &  \\
+HauF & \textit{Haushaltsausschuss der Fachschaften} &  \\
+HHP & \textit{Haushaltsplan} &  \\   
+ÖPNV & \textit{Öffentlicher Personennahverkehr} &  \\
+RFWU &\textit{Rheinische Friedrich-Wilhelms-Universität} &  \\
+SdS & \textit{Satzung der Studierendenschaft} &  \\
+SP & \textit{Studierendenparlament} &  \\
+TO & \textit{Tagesordnung} &  \\
+TOP & \textit{Tagesordnungspunkt} &  \\
+HWVO &\textit{Verordnung über die Haushalts- und Wirtschaftsführung}  & Landesgesetz, regelt die Haushalts- führung der Studierendenschaft \\
+WPAF & \textit{Wahlprüfungsausschuss der Fachschaften} &  \\
+\end{tabular}
+
+\end{document}
